@@ -1,6 +1,7 @@
 <template>
-    <div>
-
+    <div class="left-side">
+        <div>Profile</div>
+        <div>shopping bag</div>
     </div>
 </template>
 
@@ -8,6 +9,10 @@
 
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+ .left-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
 </style>

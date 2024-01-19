@@ -3,6 +3,7 @@ import Logo from './MenuItems/Logo.vue';
 import MenuItem from './MenuItems/MenuItem.vue';
 import Search from './MenuItems/Search.vue';
 import LeftSide from './MenuItems/LeftSide.vue';
+
 </script>
 
 <template>
@@ -28,5 +29,20 @@ import LeftSide from './MenuItems/LeftSide.vue';
     position: sticky;
     color:var(--color-text-light);    
 }
+.right{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+  width: 90%;
+}
+.left{
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
 
 </style>

@@ -1,5 +1,5 @@
 :root{
-    --color-menu-bar : #3B3ECE;
+    --color-menu-bar : linear-gradient(126deg,#2124b5,#3b3ece 30%,#3b3ece 70%,#2124b5);
     --color-text-light: #fff;
     --color-text-dark:#3F434D;
     --color-primary: #3B3ECE;
