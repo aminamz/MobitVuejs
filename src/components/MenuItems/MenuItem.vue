@@ -28,6 +28,7 @@
     <shoppingBagIcon
       v-else="menuItem.icon === 'shoppingBagIcon'"
       class="icon"
+      fill="white"
     />
     <span>{{ menuItem.title }}</span>
   </div>
@@ -42,7 +43,6 @@ import percentIcon from "../icons/percentIcon.vue";
 import announceIcon from "../icons/announceIcon.vue";
 import categoryIcon from "../icons/categoryIcon.vue";
 const menuItem = defineProps(["title", "icon"]);
-console.log(menuItem.icon);
 </script>
 
 <style scoped>

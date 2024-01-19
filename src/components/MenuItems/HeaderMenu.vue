@@ -2,19 +2,19 @@
 import MenuItem from "./MenuItem.vue";
 const menus = [
   {
-    title: "Category",
+    title: "دسته بندی",
     icon: "categoryIcon",
   },
   {
-    title: "Surprise",
+    title: "پیشنهادات شگفت انگیز",
     icon: "percentIcon",
   },
   {
-    title: "Announce",
+    title: "اخبار و اطلاعیه ها",
     icon: "announceIcon",
   },
   {
-    title: "CoWorkers",
+    title: "قیمت همکار و عمده",
     icon: "shopIcon",
   },
 ];

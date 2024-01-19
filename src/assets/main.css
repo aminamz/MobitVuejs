@@ -5,10 +5,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: iran;    
+}
 body{
-    direction: rtl;
+    direction: rtl;   
 }
 header{
     background: var(--color-menu-bar);
     height: 67px;
+}
+
+input{
+    font-family: iran;
+}
+
+@font-face {
+    font-family: 'iran';
+    src: url("./font/IRANSansWeb/IRANSansWeb.woff") format('woff'),
+         url("./font/IRANSansWeb/IRANSansWeb.ttf") format('ttf'),
+         url("./font/IRANSansWeb/IRANSansWeb.woff2") format('woff2');
+    font-weight: 600;
 }
