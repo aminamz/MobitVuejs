@@ -1,6 +1,6 @@
 <script setup>
 import Logo from './MenuItems/Logo.vue';
-import MenuItem from './MenuItems/MenuItem.vue';
+import HeaderMenu from './MenuItems/HeaderMenu.vue';
 import Search from './MenuItems/Search.vue';
 import LeftSide from './MenuItems/LeftSide.vue';
 
@@ -10,7 +10,7 @@ import LeftSide from './MenuItems/LeftSide.vue';
   <header class="desktop-menu">
     <div class="right">
         <Logo />
-        <MenuItem />
+        <HeaderMenu />
         <Search />
     </div>
     <div class="left">        
