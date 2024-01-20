@@ -27,3 +27,10 @@ input{
          url("./font/IRANSansWeb/IRANSansWeb.woff2") format('woff2');
     font-weight: 600;
 }
+@font-face {
+    font-family: 'iran-bold';
+    src: url("./font/IRANSansWeb_Bold/IRANSansWeb_Bold.woff") format('woff'),
+         url("./font/IRANSansWeb_Bold/IRANSansWeb_Bold.ttf") format('ttf'),
+         url("./font/IRANSansWeb_Bold/IRANSansWeb_Bold.woff2") format('woff2');
+    font-weight: 800;
+}
