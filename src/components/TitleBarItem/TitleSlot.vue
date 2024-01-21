@@ -22,7 +22,7 @@ const { iscenter } = defineProps(["iscenter"]);
   justify-content: space-between;
   width: 100%;
   height: 4rem;
-  align-item: center;
+  align-items: center;
   background-color: var(--color-place-holder);
   border-radius: 0.75rem;
   padding: 1rem;
