@@ -28,9 +28,23 @@ input{
     font-weight: 600;
 }
 @font-face {
+    font-family: 'iran-faNum';
+    src: url("./font/IRANSansWebFaNum/IRANSansWebFaNum.woff") format('woff'),
+         url("./font/IRANSansWebFaNum/IRANSansWebFaNum.ttf") format('ttf'),
+         url("./font/IRANSansWebFaNum/IRANSansWebFaNum.woff2") format('woff2');
+    font-weight: 600;
+}
+@font-face {
     font-family: 'iran-bold';
     src: url("./font/IRANSansWeb_Bold/IRANSansWeb_Bold.woff") format('woff'),
          url("./font/IRANSansWeb_Bold/IRANSansWeb_Bold.ttf") format('ttf'),
          url("./font/IRANSansWeb_Bold/IRANSansWeb_Bold.woff2") format('woff2');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'iranfaNum-bold';
+    src: url("./font/IRANSansWebFaNum_Bold/IRANSansWebFaNum_Bold.woff") format('woff'),
+         url("./font/IRANSansWebFaNum_Bold/IRANSansWebFaNum_Bold.ttf") format('ttf'),
+         url("./font/IRANSansWebFaNum_Bold/IRANSansWebFaNum_Bold.woff2") format('woff2');
     font-weight: 800;
 }
