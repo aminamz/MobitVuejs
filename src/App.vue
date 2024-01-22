@@ -6,6 +6,7 @@ import Category from "./components/Category.vue";
 </script>
 <template>
   <MenuBar />
+  <Carousel />
   <main>
     <Category />
     <titlebar className="notif" iscenter="true" />
