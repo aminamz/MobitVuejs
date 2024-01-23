@@ -4,7 +4,7 @@
   <main>
     <Category />
     <titlebar className="notif" iscenter="true" />
-    <ProductWrapper />
+    <ProductWrapper productType="special" />
   </main>
 </template>
 
@@ -14,12 +14,6 @@ import MenuBar from "./components/MenuBar.vue";
 import titlebar from "./components/titlebar.vue";
 import Category from "./components/Category.vue";
 import ProductWrapper from "./components/ProductWrapper.vue";
-import {
-  specialProducts,
-  topProducts,
-  newProducts,
-  newPhones,
-} from "./components/productdata.js";
 </script>
 
 <style scoped>

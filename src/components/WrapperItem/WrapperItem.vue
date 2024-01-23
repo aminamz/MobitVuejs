@@ -1,13 +1,13 @@
 <template>
   <section class="product">
     <div class="upper">
-      <img src="/img/product/sp1.webp" alt="" class="product-image" />
+      <img :src="product.img" alt="" class="product-image" />
       <div class="absolute">
         <div class="upper-absolute">
           <div class="right">
             <div class="off">
               <div>
-                10
+                {{ product.off }}
                 <percentIcon
                   class="icon"
                   nostroke="false"
@@ -15,37 +15,45 @@
                 />
               </div>
             </div>
-            <div class="delivery">
+            <div class="delivery" v-show="product.fastDeliver">
               <div><span>&clubs;</span>سریع</div>
             </div>
           </div>
           <div class="left">
             <div>
-              <percentIcon class="special" fill="var(--color-notif)" />
+              <percentIcon
+                v-show="product.isSpecial"
+                class="special"
+                fill="var(--color-notif)"
+              />
             </div>
           </div>
         </div>
         <div class="lower-absolute">
           <div class="pcolor">
             <div class="content">
-              <div></div>
-              <div></div>
+              <div
+                v-for="color in product.color"
+                :style="{ background: color }"
+              ></div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="lower">
-      <p class="caption">Lorem, ipsum dolor.</p>
-      <div class="prices">
-        <span class="price-unit">تومان</span>
-        <span class="product-price">100000</span>
-        <span class="off-price">90000</span>
-      </div>
-      <div class="feed-back">
-        <p class="rate-icon">&star;</p>
-        <p class="rate">4</p>
-        <p class="comments">2</p>
+      <p class="caption">{{ product.caption }}</p>
+      <div>
+        <div class="prices">
+          <span class="price-unit">تومان</span>
+          <span class="product-price">{{ product.price }}</span>
+          <span class="off-price">{{ product.offPrice }}</span>
+        </div>
+        <div class="feed-back">
+          <p class="rate-icon">&star;</p>
+          <p class="rate">{{ product.rate }}</p>
+          <p class="comments">{{ product.pcomment.length }}</p>
+        </div>
       </div>
     </div>
   </section>
@@ -53,13 +61,27 @@
 
 <script setup>
 import percentIcon from "../icons/percentIcon.vue";
+const product = defineProps({
+  id: Number,
+  img: String,
+  caption: String,
+  price: String,
+  offPrice: String,
+  isSpecial: Boolean,
+  off: Number,
+  fastDeliver: Boolean,
+  color: Array,
+  rate: Number,
+  pcomment: Array,
+});
+console.log(product.img);
 </script>
 
 <style scoped>
 .product {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  height: 100%;
 }
 .upper {
   width: 100%;
@@ -153,7 +175,7 @@ import percentIcon from "../icons/percentIcon.vue";
 .prices {
   display: flex;
   flex-direction: row-reverse;
-  margin-top: 2.5rem;
+
   font-family: iran-faNum;
   align-items: center;
 }
@@ -193,5 +215,18 @@ import percentIcon from "../icons/percentIcon.vue";
 }
 .comments::after {
   content: "نظر)";
+}
+.lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.caption {
+  margin-top: 0.5rem;
+  font-family: iran-bold;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 0.8rem;
 }
 </style>

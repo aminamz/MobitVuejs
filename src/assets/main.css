@@ -39,7 +39,6 @@ input{
     src: url("./font/IRANSansWeb_Bold/IRANSansWeb_Bold.woff") format('woff'),
          url("./font/IRANSansWeb_Bold/IRANSansWeb_Bold.ttf") format('ttf'),
          url("./font/IRANSansWeb_Bold/IRANSansWeb_Bold.woff2") format('woff2');
-    font-weight: 800;
 }
 @font-face {
     font-family: 'iranfaNum-bold';
