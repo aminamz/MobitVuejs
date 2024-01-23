@@ -1,8 +1,16 @@
 <template>
   <TitleSlot :class="[clsname]" :iscenter="iscenter">
-    <template v-slot:title>شگفت انگیز</template>
-    <template v-slot:centerItem v-if="iscenter">شگفت انگیز</template>
-    <template v-slot:showAll>نمایش همه</template>
+    <template v-slot:title>
+      <slot name="title"></slot>
+    </template>
+
+    <template v-slot:centerItem v-if="iscenter">
+      <slot name="centerItem"></slot>
+    </template>
+
+    <template v-slot:showAll>
+      <slot name="showAll"></slot>
+    </template>
   </TitleSlot>
 </template>
 

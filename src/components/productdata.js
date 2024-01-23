@@ -94,8 +94,133 @@ const specialProducts = [
   },
 ];
 
-const newProducts = [{}];
-const topProducts = [{}];
-const newPhones = [{}];
+const newProducts = [
+  {
+    id: 7,
+    img: "/img/product/sp3.webp",
+    caption:
+      "گوشی موبایل آنر مدل X6a دو سیم کارت ظرفیت 128 گیگابایت و 4 گیگابایت رم",
+    price: "4,825,000",
+    offPrice: "5,199,000",
+    isSpecial: true,
+    off: 7,
+    fastDeliver: true,
+    color: ["green"],
+    rate: 0,
+    pcomment: [],
+  },
+];
+const topProducts = [
+  {
+    id: 1,
+    img: "/img/product/tp1.webp",
+    caption:
+      "گوشی موبایل ریلمی Realme 11 Pro Plus 5Gظرفیت 512 گیگابایت و رم 12 گیگابایت",
+    price: "15,739,000",
+    offPrice: "16,211,000",
+    isSpecial: false,
+    off: 3,
+    fastDeliver: true,
+    color: ["green"],
+    rate: 0,
+    pcomment: [],
+  },
+  {
+    id: 2,
+    img: "/img/product/tp2.webp",
+    caption:
+      "گوشی موبایل موتورولا مدل Edge 40 دو سیم‌ کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
+    price: "17,099,000",
+    offPrice: "17,612,000",
+    isSpecial: false,
+    off: 3,
+    fastDeliver: true,
+    color: ["green"],
+    rate: 0,
+    pcomment: [],
+  },
+  {
+    id: 3,
+    img: "/img/product/tp3.webp",
+    caption: "کنسول بازی قابل حمل گرین لاین مدل GP Pro",
+    price: "2,689,000",
+    offPrice: "2,931,000",
+    isSpecial: false,
+    off: 8,
+    fastDeliver: true,
+    color: ["green"],
+    rate: 0,
+    pcomment: [],
+  },
+  {
+    id: 4,
+    img: "/img/product/tp4.webp",
+    caption:
+      " گوشی موبایل آنر مدل Honor 90 Lite دو سیم کارت ظرفیت 256 گیگابایت و 8 گیگابایت رم",
+    price: "9,329,000",
+    offPrice: "9,827,000",
+    isSpecial: false,
+    off: 5,
+    fastDeliver: true,
+    color: ["green"],
+    rate: 0,
+    pcomment: [],
+  },
+  {
+    id: 5,
+    img: "/img/product/tp5.webp",
+    caption: "ساعت هوشمند شیائومی مدل Mibro Watch A2",
+    price: "1,379,000",
+    offPrice: "1,567,000",
+    isSpecial: true,
+    off: 12,
+    fastDeliver: true,
+    color: ["green"],
+    rate: 0,
+    pcomment: [],
+  },
+  {
+    id: 6,
+    img: "/img/product/tp6.webp",
+    caption: "ساعت هوشمند شیائومی مدل Mibro Watch C3",
+    price: "1,279,000",
+    offPrice: "1,488,000",
+    isSpecial: false,
+    off: 14,
+    fastDeliver: true,
+    color: ["green"],
+    rate: 0,
+    pcomment: [],
+  },
+  {
+    id: 7,
+    img: "/img/product/tp7.webp",
+    caption: "ساعت هوشمند شیائومی مدل JIEKEMI Smart Watch S1",
+    price: "1,039,000",
+    offPrice: "1,252,000",
+    isSpecial: false,
+    off: 17,
+    fastDeliver: true,
+    color: ["green"],
+    rate: 0,
+    pcomment: [],
+  },
+];
+const newPhones = [
+  {
+    id: 7,
+    img: "/img/product/sp3.webp",
+    caption:
+      "گوشی موبایل آنر مدل X6a دو سیم کارت ظرفیت 128 گیگابایت و 4 گیگابایت رم",
+    price: "4,825,000",
+    offPrice: "5,199,000",
+    isSpecial: true,
+    off: 7,
+    fastDeliver: true,
+    color: ["green"],
+    rate: 0,
+    pcomment: [],
+  },
+];
 
 export { specialProducts, newProducts, topProducts, newPhones };

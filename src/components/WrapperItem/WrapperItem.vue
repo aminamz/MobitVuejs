@@ -74,7 +74,6 @@ const product = defineProps({
   rate: Number,
   pcomment: Array,
 });
-console.log(product.img);
 </script>
 
 <style scoped>
