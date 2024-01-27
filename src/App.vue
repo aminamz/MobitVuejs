@@ -15,19 +15,24 @@
     </titlebar>
     <ProductWrapper productType="top" />
   </main>
+  <footer>
+    <Footer></Footer>
+  </footer>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import Carousel from "./components/Carousel.vue";
 import MenuBar from "./components/MenuBar.vue";
-import titlebar from "./components/titlebar.vue";
+import titlebar from "./components/Titlebar.vue";
 import Category from "./components/Category.vue";
 import ProductWrapper from "./components/ProductWrapper.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <style scoped>
-main {
+main,
+footer {
   width: 90vw;
   max-width: 1647px;
   margin: 0 auto;
