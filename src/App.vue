@@ -24,6 +24,8 @@
     </titlebar>
     <ProductWrapper productType="new" />
 
+    <BrandsWrapper />
+
     <titlebar :iscenter="false">
       <template v-slot:title>محصولات جدید</template>
       <template v-slot:showAll>نمایش همه</template>
@@ -46,6 +48,7 @@ import Category from "./components/Category.vue";
 import ProductWrapper from "./components/ProductWrapper.vue";
 import Footer from "./components/footer.vue";
 import BodyBanner from "./components/BodyBanner.vue";
+import BrandsWrapper from "./components/BrandsWrapper.vue";
 </script>
 
 <style scoped>

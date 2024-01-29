@@ -21,8 +21,8 @@ const imgClass = size === "carousel" ? "carousel" : "footer";
   width: 100%;
 }
 .carousel {
-  height: 80px;
-  width: 80px;
+  height: 232px;
+  width: 232px;
 }
 .footer {
   height: 64px;
