@@ -29,7 +29,7 @@ function chooseType(productType) {
   if (productType === "special") return specialProducts;
   else if (productType === "top") return topProducts;
   else if (productType === "new") return newProducts;
-  else return newPhones;
+  else if (productType === "phone") return newPhones;
 }
 
 const products = chooseType(productType);

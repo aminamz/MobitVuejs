@@ -6,7 +6,7 @@
     <p v-if="iscenter">
       <slot name="centerItem"></slot>
     </p>
-    <p class="show"><slot name="showAll"></slot></p>
+    <div class="show"><slot name="showAll"></slot></div>
   </div>
 </template>
 
@@ -36,6 +36,11 @@ title-bar h2 p {
 }
 .title {
   font-family: iran-bold;
+}
+.show {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
 .show::after {
   content: ">";

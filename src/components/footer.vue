@@ -45,7 +45,11 @@
     </div>
     <TitlebarVue class="app-link" iscenter="false">
       <template v-slot:title>امکانات بیشتر در مبیت</template>
-      <template v-slot:showAll>بیشتر</template>
+      <template v-slot:showAll>
+        <div class="apps">بازار</div>
+        <div class="apps">مایکت</div>
+        <div class="apps">اپ استور</div>
+      </template>
     </TitlebarVue>
     <div class="meta-footer">
       <div class="discription">
@@ -207,6 +211,12 @@ const links = [
 .service-icon .icon {
   height: 148px;
   width: 148px;
+}
+.apps {
+  padding: 0.5rem 2rem;
+  background-color: var(--color-text-light);
+  border-radius: 10px;
+  margin: 0.5rem;
 }
 .links {
   display: flex;

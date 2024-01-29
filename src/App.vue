@@ -9,14 +9,31 @@
       <template v-slot:showAll>نمایش همه</template>
     </titlebar>
     <ProductWrapper productType="special" />
+
     <titlebar :iscenter="false">
-      <template v-slot:title>جدید ترین ها</template>
+      <template v-slot:title>پربازدیدترین ماه</template>
       <template v-slot:showAll>نمایش همه</template>
     </titlebar>
     <ProductWrapper productType="top" />
+
+    <BodyBanner type="ads" />
+
+    <titlebar :iscenter="false">
+      <template v-slot:title>محصولات جدید</template>
+      <template v-slot:showAll>نمایش همه</template>
+    </titlebar>
+    <ProductWrapper productType="new" />
+
+    <titlebar :iscenter="false">
+      <template v-slot:title>محصولات جدید</template>
+      <template v-slot:showAll>نمایش همه</template>
+    </titlebar>
+    <ProductWrapper productType="phone" />
+
+    <BodyBanner type="category" />
   </main>
   <footer>
-    <Footer></Footer>
+    <Footer />
   </footer>
 </template>
 
@@ -27,7 +44,8 @@ import MenuBar from "./components/MenuBar.vue";
 import titlebar from "./components/Titlebar.vue";
 import Category from "./components/Category.vue";
 import ProductWrapper from "./components/ProductWrapper.vue";
-import Footer from "./components/Footer.vue";
+import Footer from "./components/footer.vue";
+import BodyBanner from "./components/BodyBanner.vue";
 </script>
 
 <style scoped>
