@@ -24,23 +24,32 @@ import LeftSide from "./MenuItems/LeftSide.vue";
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
+  top: 0;
+  z-index: 10;
   position: sticky;
   color: var(--color-text-light);
 }
 .right {
-  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  gap: 2rem;
+  justify-content: space-between;
   align-items: center;
-  width: 80%;
+  gap: 2rem;
 }
 .left {
-  width: 20%;
   display: flex;
-  flex-direction: row;
-  justify-content: end;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+@media (max-width: 1023px) {
+  .right {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .left {
+    display: none;
+  }
 }
 </style>

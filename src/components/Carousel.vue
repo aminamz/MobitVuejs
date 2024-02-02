@@ -82,5 +82,15 @@ const image = [
 .inner-carousel {
   position: relative;
   height: 100%;
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  .carousel {
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    border-radius: 10px;
+    height: 195px;
+  }
 }
 </style>

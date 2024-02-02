@@ -25,5 +25,13 @@ const menus = [
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: iran-bold;
+  font-size: 0.8rem;
+}
+@media (max-width: 1536px) {
+  .left-side {
+    font-size: 0.5rem;
+    gap: 0.5rem;
+  }
 }
 </style>

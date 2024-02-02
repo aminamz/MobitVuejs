@@ -42,10 +42,4 @@ title-bar h2 p {
   flex-direction: row-reverse;
   justify-content: space-evenly;
 }
-.show::after {
-  content: ">";
-  display: inline-block;
-  text-align: center;
-  padding-right: 5px;
-}
 </style>

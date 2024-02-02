@@ -33,18 +33,22 @@
       </div>
       <div class="social-links">
         <h2>با ما همراه باشید</h2>
-        <div id="instagram">
-          <a href="https://instagram.com"
-            ><img src="/img/instagramIcon.webp"
-          /></a>
-        </div>
-        <div id="aparat">
-          <a href="https://aparat.com"><img src="/img/aparatIcon.webp" /></a>
+        <div class="social">
+          <div id="instagram">
+            <a href="https://instagram.com"
+              ><img src="/img/instagramIcon.webp"
+            /></a>
+          </div>
+          <div id="aparat">
+            <a href="https://aparat.com"><img src="/img/aparatIcon.webp" /></a>
+          </div>
         </div>
       </div>
     </div>
     <TitlebarVue class="app-link" iscenter="false">
-      <template v-slot:title>امکانات بیشتر در مبیت</template>
+      <template v-slot:title
+        ><span class="app-title">امکانات بیشتر در اپ مبیت</span></template
+      >
       <template v-slot:showAll>
         <div class="apps">بازار</div>
         <div class="apps">مایکت</div>
@@ -243,6 +247,13 @@ const links = [
   flex-direction: row;
   justify-content: end;
 }
+.social-links h2 {
+  padding-top: 0.5rem;
+}
+.social {
+  display: flex;
+  align-items: flex-start;
+}
 #instagram {
   opacity: 0.2;
 }
@@ -273,6 +284,9 @@ const links = [
   padding-top: 1.2rem;
   opacity: 0.6;
 }
+.app-title {
+  color: blue;
+}
 .certificate {
   display: flex;
   flex-direction: row-reverse;
@@ -284,5 +298,37 @@ const links = [
 }
 .copyright {
   margin-bottom: 2rem;
+}
+@media (max-width: 1024px) {
+  .service-footer {
+    flex-direction: column-reverse;
+  }
+  .service-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-icon .icon {
+    width: 100%;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .social-links {
+    justify-content: space-between;
+  }
+  .meta-footer {
+    flex-direction: column;
+  }
+  .meta-footer .discription {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .app-link {
+    flex-direction: column;
+    height: auto;
+  }
+  .internal-links {
+    width: 100%;
+  }
 }
 </style>

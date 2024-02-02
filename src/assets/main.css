@@ -23,7 +23,16 @@ header{
 input{
     font-family: iran;
 }
-
+@media (max-width: 1536px) {
+    header{
+        height: 46px;
+    }
+}
+@media (max-width: 1023px) {
+    header{
+        height: 155px;
+    }
+}
 @font-face {
     font-family: 'iran';
     src: url("./font/IRANSansWeb/IRANSansWeb.woff") format('woff'),

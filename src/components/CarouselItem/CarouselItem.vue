@@ -23,6 +23,7 @@ const { item, currentSlide, index, dir } = defineProps([
   left: 0;
   right: 0;
 }
+
 .slide-in-enter-active,
 .slide-in-leave-active {
   transition: all 1.5s ease-in-out;
@@ -42,5 +43,13 @@ const { item, currentSlide, index, dir } = defineProps([
 }
 .slide-out-leave-to {
   transform: translatex(-100%);
+}
+
+@media (max-width: 1023px) {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+  }
 }
 </style>

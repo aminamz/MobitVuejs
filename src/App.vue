@@ -6,13 +6,13 @@
     <titlebar className="notif" :iscenter="true">
       <template v-slot:title>شگفت انگیز</template>
       <template v-slot:centerItem>جدید ترین ها</template>
-      <template v-slot:showAll>نمایش همه</template>
+      <template v-slot:showAll><a href="#">نمایش همه</a></template>
     </titlebar>
     <ProductWrapper productType="special" />
 
     <titlebar :iscenter="false">
       <template v-slot:title>پربازدیدترین ماه</template>
-      <template v-slot:showAll>نمایش همه</template>
+      <template v-slot:showAll><a href="#">نمایش همه</a></template>
     </titlebar>
     <ProductWrapper productType="top" />
 
@@ -20,17 +20,17 @@
 
     <titlebar :iscenter="false">
       <template v-slot:title>محصولات جدید</template>
-      <template v-slot:showAll>نمایش همه</template>
+      <template v-slot:showAll><a href="#">نمایش همه</a></template>
     </titlebar>
-    <ProductWrapper productType="new" />
+    <ProductWrapper productType="top" />
 
     <BrandsWrapper />
 
     <titlebar :iscenter="false">
       <template v-slot:title>محصولات جدید</template>
-      <template v-slot:showAll>نمایش همه</template>
+      <template v-slot:showAll><a href="#">نمایش همه</a></template>
     </titlebar>
-    <ProductWrapper productType="phone" />
+    <ProductWrapper productType="top" />
 
     <BodyBanner type="category" />
   </main>

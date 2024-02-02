@@ -18,8 +18,9 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100px;
-  height: 100px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 div img {
   height: 72px;

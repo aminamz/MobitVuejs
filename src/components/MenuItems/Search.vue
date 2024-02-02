@@ -57,4 +57,33 @@ import searchIcon from "../icons/searchIcon.vue";
 .search-input:focus {
   outline: none;
 }
+@media (max-width: 1536px) {
+  .search-box {
+    width: 200px;
+    height: 60%;
+    border-radius: 5px;
+  }
+  .search-btn .icon {
+    height: 15px;
+    width: 15px;
+  }
+  .search-input {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 1023px) {
+  .search-box {
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+  }
+  .search-btn .icon {
+    height: 25px;
+    width: 25px;
+  }
+  .search-input {
+    font-size: 0.8rem;
+    height: 80%;
+  }
+}
 </style>

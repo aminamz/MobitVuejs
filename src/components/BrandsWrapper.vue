@@ -1,9 +1,20 @@
 <template>
   <swiper-container
     navigation="true"
-    slides-per-view="6"
+    slides-per-view="2"
     space-between="20"
     virtual="true"
+    :breakpoints="{
+      1536: {
+        slidesPerView: 6,
+      },
+      1023: {
+        slidesPerView: 5,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+    }"
   >
     <swiper-slide v-for="(items, index) in brands" :key="index">
       <BoxIcon size="carousel" :caption="items.title" :url="items.url" />

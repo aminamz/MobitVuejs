@@ -1,9 +1,20 @@
 <template>
   <swiper-container
     navigation="true"
-    slides-per-view="6"
+    slides-per-view="1"
     space-between="20"
     virtual="true"
+    :breakpoints="{
+      1536: {
+        slidesPerView: 6,
+      },
+      1023: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+    }"
   >
     <swiper-slide v-for="items in products" :key="items.id">
       <WrapperItem v-bind="items" />
