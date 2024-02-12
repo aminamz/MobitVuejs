@@ -331,4 +331,20 @@ const links = [
     width: 100%;
   }
 }
+@media (max-width: 360px) {
+  .links {
+    overflow-x: auto;
+    position: relative;
+  }
+  .internal-links {
+    width: max-content;
+  }
+  .internal-links .column {
+    margin-left: 1.5rem;
+  }
+
+  .certificate {
+    flex-wrap: wrap;
+  }
+}
 </style>

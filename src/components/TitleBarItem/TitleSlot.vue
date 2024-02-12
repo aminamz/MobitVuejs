@@ -42,4 +42,12 @@ title-bar h2 p {
   flex-direction: row-reverse;
   justify-content: space-evenly;
 }
+@media (max-width: 1023px) {
+  .title {
+    font-size: 0.8rem;
+  }
+  .show {
+    font-size: 0.8rem;
+  }
+}
 </style>
